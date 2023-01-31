@@ -21,36 +21,43 @@ namespace Line_Comparison
             double lenght1 = 0;
             double lenght2 = 0;
 
-              for (int i = 1; i <= 2; i++)
-            {
-                if (i == 1)
+                for (int i = 1; i <= 2; i++)
                 {
+                  if (i == 1)
+                  {
                     Console.WriteLine("####### enter valuse for length of first line ######## ");
                     double length = read();
                     Console.WriteLine("Length of line**** " + length);
-                lenght1= length;
-                }
-                else
-                {
+                    lenght1= length;
+                  }
+                   else
+                  {
                     Console.WriteLine("####### enter valuse for length of second line ######## ");
                     double length= read();
                     Console.WriteLine("Length of line**** " + length);
                     lenght2= length;
 
+                   }
                 }
-              }
-            if (lenght1.Equals(lenght2))
-            {
-                Console.WriteLine("length of both lines are equle");
+                    
+
+                   if (lenght1.Equals(lenght2))
+                   {
+                    Console.WriteLine("length of both lines are equle");
             
+                   }
+                   
+                   else if (lenght1>(lenght2))
+                   {
+                     Console.WriteLine("first line is greater than second line");
+
+                   }
+                   else 
+                   {
+                     Console.WriteLine("second line is greater than first line");
+
             }
-            
-            else
-            {
-                Console.WriteLine("length of both lines are not equle");
-            }
-       
-            
+
 
         }
             static double read()
